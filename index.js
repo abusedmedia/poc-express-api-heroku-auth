@@ -11,7 +11,7 @@ const expressSession = require('express-session')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 
-app.use(cors({origin: 'http://rootdomain.com:8080', credentials: true}))
+app.use(cors({origin: 'http://test2.presenta.cc', credentials: true}))
 app.use(bodyParser.json({limit: '1mb'}))
 app.use(cookieParser())
 app.use(expressSession({
@@ -21,7 +21,7 @@ app.use(expressSession({
   secret: 'mysecretphrase',
   httpOnly: true,
   sameSite: true,
-  cookie: {path: '/', domain: '.rootdomain.com'}
+  cookie: {path: '/', domain: '.presenta.cc'}
 
 }))
 app.use(bodyParser.urlencoded({extended: false}))
