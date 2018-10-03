@@ -11,7 +11,7 @@ const expressSession = require('express-session')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 
-app.use(cors({origin: 'http://test2.presenta.cc', credentials: true}))
+app.use(cors({origin: 'http://test3.presenta.cc', credentials: true}))
 app.use(bodyParser.json({limit: '1mb'}))
 app.use(cookieParser())
 app.use(expressSession({
